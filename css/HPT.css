@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* CSS Document */
 * {
 	margin: 0;
@@ -131,23 +132,91 @@ span {
 	color: aliceblue;
 }
 
-.introduction {
-	width: 100%;
-	height: 700px;
-	overflow: visible;
+.screen {
+	width: 1200px;
+	height: 550px;
+	position: relative;
+	top: 100px;
+	display: inline-block;
+	bottom: 50px;
+	overflow: hidden;
+}
+
+.screen li {
+	width: 1200px;
+	height: 550px;
+	overflow: hidden;
+	float: left;
+}
+
+.screen ul {
 	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 16800px;
+}
+
+.introduction ol {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	line-height: 20px;
 	text-align: center;
+	z-index: 1;
+}
+
+.introduction ol li {
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.introduction ol li.current {
+	background: #479DD4;
+}
+
+
+/*#arr {display: none;}*/
+#arr span {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	margin-top: -20px;
+	background: #000;
+	cursor: pointer;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-family: '黑体';
+	font-size: 30px;
+	color: #fff;
+	opacity: 0.3;
+	border: 1px solid #fff;
+}
+
+.next {
+	width: 40px;
+	height: 40px;
+}
+
+#arr #right {
+	right: 5px;
+	left: auto;
 }
 
 
 .box {
 	width: 1200px;
 	height: 550px;
-	
-	top: 100px;
+	float: left;
 	overflow: hidden;
 	position: relative;
-	display: inline-block;
 }
 
 .box>img {
@@ -257,3 +326,4 @@ font>a{
 .box:hover .sc {
 	top: 0px;
 }
+
