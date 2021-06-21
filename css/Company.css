@@ -44,7 +44,10 @@ body {
 	text-align: center;
 	color: aliceblue;
 }
-
+.li1>a font{
+	position: relative;
+	bottom: 15px
+}
 .li:hover .down {
 	display: block;
 }
@@ -61,6 +64,7 @@ body {
 }
 
 .li1>a {
+	width: 400px;
 	height: 50px;
 	float: left;
 }
