@@ -1,0 +1,3 @@
+Github：https://github.com/ConspiratorR/Siteplanning
+详情文档请阅读Markdown文件README.md。
+如遇到预料之外的问题请使用最新版Firefox打开。
