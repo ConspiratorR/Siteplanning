@@ -1,13 +1,13 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>大国智造—互联网</title>
-<link href="css/HPT.css" rel="stylesheet" type="text/css">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>大国智造—互联网</title>
+		<link href="css/HPT.css" rel="stylesheet" type="text/css">
+	</head>
 
-<body>
-	<div class="head">
+	<body>
+		<div class="head">
 			<ul class="ul">
 				<li class="cctv li">
 					<a href="http://jingji.cctv.com/special/dgzz/home/index.shtml" target="_blank">央视网-大国智造</a>
@@ -19,8 +19,8 @@
 						<a href="HK.html">航空站</a>
 						<a href="HK.html">通讯卫星</a>
 					</div>
-			  </li>
-			 
+				</li>
+
 				<li class="li">
 					<a href="#screen4">互联网</a>
 					<div class="down">
@@ -77,10 +77,11 @@
 							<div class="sc">
 								<h2>5G</h2>
 								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第五代移动通信技术是具有高速率、低<br>
-时延和大连接特点的新一代宽带移动通信技<br>
-术，是实现人机物互联的网络基础设施。</p>
+									时延和大连接特点的新一代宽带移动通信技<br>
+									术，是实现人机物互联的网络基础设施。</p>
 								<div class="bt">
-									<font size="+1"><a href="https://baike.baidu.com/item/5g/29780" target="_blank">了解更多</a></font>
+									<font size="+1"><a href="https://baike.baidu.com/item/5g/29780"
+											target="_blank">了解更多</a></font>
 									<span class="top"></span>
 									<span class="left"></span>
 									<span class="bottom"></span>
@@ -89,148 +90,151 @@
 							</div>
 						</div>
 					</li>
-					<li><div class="box">
+					<li>
+						<div class="box">
 							<img src="Image/5G2.png" alt="HLW2" />
 							<div class="sc">
 								<h2>5G</h2>
 								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第五代移动通信技术是具有高速率、低<br>
-时延和大连接特点的新一代宽带移动通信技<br>
-术，是实现人机物互联的网络基础设施。</p>
+									时延和大连接特点的新一代宽带移动通信技<br>
+									术，是实现人机物互联的网络基础设施。</p>
 								<div class="bt">
-									<font size="+1"><a href="https://baike.baidu.com/item/5g/29780" target="_blank">了解更多</a></font>
+									<font size="+1"><a href="https://baike.baidu.com/item/5g/29780"
+											target="_blank">了解更多</a></font>
 									<span class="top"></span>
 									<span class="left"></span>
 									<span class="bottom"></span>
 									<span class="right"></span>
 								</div>
 							</div>
-						</div></li>
-					<li><div class="box">
+						</div>
+					</li>
+					<li>
+						<div class="box">
 							<img src="Image/5G3.png" alt="HLW3" />
 							<div class="sc">
 								<h2>5G</h2>
 								<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第五代移动通信技术是具有高速率、低<br>
-时延和大连接特点的新一代宽带移动通信技<br>
-术，是实现人机物互联的网络基础设施。</p>
+									时延和大连接特点的新一代宽带移动通信技<br>
+									术，是实现人机物互联的网络基础设施。</p>
 								<div class="bt">
-									<font size="+1"><a href="https://baike.baidu.com/item/5g/29780" target="_blank">了解更多</a></font>
+									<font size="+1"><a href="https://baike.baidu.com/item/5g/29780"
+											target="_blank">了解更多</a></font>
 									<span class="top"></span>
 									<span class="left"></span>
 									<span class="bottom"></span>
 									<span class="right"></span>
 								</div>
 							</div>
-						</div></li>
+						</div>
+					</li>
 				</ul>
 				<ol></ol>
-				<div id="arr"><span id="left"><img class="next" src="Image/Left.png" alt=""></span><span id="right"><img class="next" src="Image/Right.png" alt=""></span></div>
+				<div id="arr"><span id="left"><img class="next" src="Image/Left.png" alt=""></span><span id="right"><img
+							class="next" src="Image/Right.png" alt=""></span></div>
 			</div>
-			
+
 		</div>
 		<div class="end">
 			<span>MADEBY: &nbsp;&nbsp;李永琦 187020115 / 郑思桐 187020102 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				INSTRUCTOR: &nbsp;&nbsp;赵珊老师</span>
 		</div>
-</body>
+	</body>
 </html>
 <script>
-    //获取相关元素。
-    var box = document.getElementById("introduction");
-    var ul = box.children[0].children[0];
-    var ol = box.children[0].children[1];
-    var ulLiArr = ul.children;
-    //补齐相互盒子
-        //1.复制第一张图片所在的li，填入所在的ul中。
-    var newLi = ulLiArr[0].cloneNode(true);
-    ul.appendChild(newLi);
-        //2.生成相关的ol中的li。
-    for(var i=0;i<ulLiArr.length-1;i++){
-        var newOlLi = document.createElement("li");
-        newOlLi.innerHTML = i+1;
-        ol.appendChild(newOlLi);
-    }
-        //3.点亮第一个ol中的li。
-    var olLiArr = ol.children;
-    ol.children[0].className = "current";
-    //3.鼠标放到小方块儿上，轮播图片。
-    for(var i=0;i<olLiArr.length;i++){
-        olLiArr[i].index = i;
-        olLiArr[i].onmouseover = function () {
-            for(var j=0;j<olLiArr.length;j++){
-                olLiArr[j].className = "";
-            }
-            olLiArr[this.index].className = "current";
-            animate(ul,-this.index*ul.children[0].offsetWidth);
-            key = square = this.index;
-        }
-    }
-    //4.添加定时器。
-    var timer = null;
-    var key = 0;
-    var square = 0;
-    timer = setInterval(autoPlay,2000);
- 
- 
-    function autoPlay(){
-        key++;
-        square++;
-        if(key>olLiArr.length){
-            key=1;
-            ul.style.left = 0;
-        }
-        animate(ul,-key*ul.children[0].offsetWidth);
- 
- 
-        square = square>olLiArr.length-1?0:square;
-        for(var j=0;j<olLiArr.length;j++){
-            olLiArr[j].className = "";
-        }
-        olLiArr[square].className = "current";
-    }
-    //5.鼠标移开开启定时器，鼠标放上去开启定时器。
-    box.onmouseover = function () {
-        clearInterval(timer);
-    }
-    box.onmouseout = function () {
-        timer = setInterval(autoPlay,2000);
-    }
-    //6.左右切换的按钮。
-    var btnArr = box.children[0].children[2].children;
-    btnArr[0].onclick = function () {
-        key--;
-        square--;
-        if(key<0){
-            key=4;
-            ul.style.left = -5*ul.children[0].offsetWidth + "px";
-        }
-        animate(ul,-key*ul.children[0].offsetWidth);
- 
- 
-        square = square<0?olLiArr.length-1:square;
-        for(var j=0;j<olLiArr.length;j++){
-            olLiArr[j].className = "";
-        }
-        olLiArr[square].className = "current";
-    }
-    btnArr[1].onclick = function () {
-        autoPlay();
-    }
-	
-    //  基本封装
-    function animate(obj,target) {
-        clearInterval(obj.timer);
-        var speed = obj.offsetLeft < target ? 15 : -15;
-        obj.timer = setInterval(function() {
-            var result = target - obj.offsetLeft;
-            obj.style.left = obj.offsetLeft + speed  + "px";
-            if(Math.abs(result) <= 15) {
-                obj.style.left = target + "px";
-                clearInterval(obj.timer);
-            }
-        },10);
-    }
- 
- 
- 
- 
+	//获取相关元素。
+	var box = document.getElementById("introduction");
+	var ul = box.children[0].children[0];
+	var ol = box.children[0].children[1];
+	var ulLiArr = ul.children;
+	//补齐相互盒子
+	//1.复制第一张图片所在的li，填入所在的ul中。
+	var newLi = ulLiArr[0].cloneNode(true);
+	ul.appendChild(newLi);
+	//2.生成相关的ol中的li。
+	for (var i = 0; i < ulLiArr.length - 1; i++) {
+		var newOlLi = document.createElement("li");
+		newOlLi.innerHTML = i + 1;
+		ol.appendChild(newOlLi);
+	}
+	//3.点亮第一个ol中的li。
+	var olLiArr = ol.children;
+	ol.children[0].className = "current";
+	//3.鼠标放到小方块儿上，轮播图片。
+	for (var i = 0; i < olLiArr.length; i++) {
+		olLiArr[i].index = i;
+		olLiArr[i].onmouseover = function() {
+			for (var j = 0; j < olLiArr.length; j++) {
+				olLiArr[j].className = "";
+			}
+			olLiArr[this.index].className = "current";
+			animate(ul, -this.index * ul.children[0].offsetWidth);
+			key = square = this.index;
+		}
+	}
+	//4.添加定时器。
+	var timer = null;
+	var key = 0;
+	var square = 0;
+	timer = setInterval(autoPlay, 2000);
+
+
+	function autoPlay() {
+		key++;
+		square++;
+		if (key > olLiArr.length) {
+			key = 1;
+			ul.style.left = 0;
+		}
+		animate(ul, -key * ul.children[0].offsetWidth);
+
+
+		square = square > olLiArr.length - 1 ? 0 : square;
+		for (var j = 0; j < olLiArr.length; j++) {
+			olLiArr[j].className = "";
+		}
+		olLiArr[square].className = "current";
+	}
+	//5.鼠标移开开启定时器，鼠标放上去开启定时器。
+	box.onmouseover = function() {
+		clearInterval(timer);
+	}
+	box.onmouseout = function() {
+		timer = setInterval(autoPlay, 2000);
+	}
+	//6.左右切换的按钮。
+	var btnArr = box.children[0].children[2].children;
+	btnArr[0].onclick = function() {
+		key--;
+		square--;
+		if (key < 0) {
+			key = 4;
+			ul.style.left = -5 * ul.children[0].offsetWidth + "px";
+		}
+		animate(ul, -key * ul.children[0].offsetWidth);
+
+
+		square = square < 0 ? olLiArr.length - 1 : square;
+		for (var j = 0; j < olLiArr.length; j++) {
+			olLiArr[j].className = "";
+		}
+		olLiArr[square].className = "current";
+	}
+	btnArr[1].onclick = function() {
+		autoPlay();
+	}
+
+	//  基本封装
+	function animate(obj, target) {
+		clearInterval(obj.timer);
+		var speed = obj.offsetLeft < target ? 15 : -15;
+		obj.timer = setInterval(function() {
+			var result = target - obj.offsetLeft;
+			obj.style.left = obj.offsetLeft + speed + "px";
+			if (Math.abs(result) <= 15) {
+				obj.style.left = target + "px";
+				clearInterval(obj.timer);
+			}
+		}, 10);
+	}
 </script>
