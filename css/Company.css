@@ -269,13 +269,12 @@ font>a {
 	float: right;
 	position: relative;
 	top: 70px;
-	z-index: 3;
 	overflow: hidden;
 }
 
 .imgbox>img{
 	width: 1000px;
-	height: 55opx;
+	height: 550px;
 }
 
 h3 {
